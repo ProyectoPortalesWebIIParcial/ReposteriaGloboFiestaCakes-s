@@ -28,6 +28,7 @@ html {
     }
 }
 
-a.navbar-item:hover {
+.navbar a:hover {
     color: #743E32;
+    background-color: white;
 }
