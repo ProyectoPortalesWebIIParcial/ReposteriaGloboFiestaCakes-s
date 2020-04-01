@@ -17,3 +17,17 @@ html {
 .hero.is-brown {
     background-color: #743E32;
 }
+
+.navbar a {
+    color: white;
+}
+
+@media(min-width:300px) {
+    .navbar-item {
+        background-color: #743E32;
+    }
+}
+
+a.navbar-item:hover {
+    color: #743E32;
+}
