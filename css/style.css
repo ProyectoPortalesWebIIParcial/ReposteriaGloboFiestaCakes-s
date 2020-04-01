@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.hero-body {
+    background-image: url("../images/header.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero.is-brown {
+    background-color: #743E32;
+}
