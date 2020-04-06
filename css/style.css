@@ -34,14 +34,27 @@ html {
 }
 
 .footer {
-    background-image: url("../image/info.png");
-    background-size: cover;
-    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #743E32;
 }
 
-.footer.is-brown {
-    background-color: #743E32;
-    opacity: 80%;
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+    background-image: url("../images/info.jpg");
+}
+
+.title {
+    position: relative;
 }
 
 .copyrigth {
