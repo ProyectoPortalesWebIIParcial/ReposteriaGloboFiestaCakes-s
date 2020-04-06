@@ -65,9 +65,10 @@ html {
     transition: background-color 0.3s ease;
     margin-bottom: 1.5rem;
   }
-  .button:hover {
-        color: #743E32;
-        background-color: white;
+  
+.button:hover {
+     color: #743E32;
+     background-color: white;
   }
   
   @media (min-width: 768px) {
@@ -84,7 +85,7 @@ html {
 
 
 
-  .footer {
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
