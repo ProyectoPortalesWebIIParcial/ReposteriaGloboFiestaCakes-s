@@ -1,0 +1,142 @@
+:root {
+    --white: #ffffff;
+    --smokywhite:#F5F5F5;
+    --blue:#66C3C1;
+    --brown:#743E32;
+  }
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.hero-body {
+    background-image: url("../images/header.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero.is-brown {
+    background-color: var(--brown);
+}
+
+.navbar a {
+    color:var(--white);
+}
+
+@media(min-width:300px) {
+    .navbar-item {
+        background-color: var(--brown);
+    }
+}
+
+.navbar a:hover {
+    color: var(--brown);
+    background-color: var(--white);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--brown);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+    background-image: url("../images/info.jpg");
+}
+
+.title {
+    position: relative;
+}
+
+.copyrigth {
+    background-color:var(--blue);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.social-network i {
+    font-size: 2em;
+    padding: 0.2em;
+}
+
+.facebook-icon {
+    color: #3D5A98;
+}
+
+.instagram-icon {
+    color: #E24F4E;
+}
+
+.twitter-icon {
+    color: #38A8E0;
+}
+
+.title {
+    font-size: 5em;
+}
+
+.column-padding {
+    padding-top: 1.5em;
+}
+
+.column-padding-inicio {
+    padding-top: 2.5em;
+}
+
+@media(min-width:768px) {
+    .column image {
+        background-size: cover;
+        position: 100% 100%;
+    }
+}
+
+.button {
+    background-color:var(--blue);
+    color: var(--white);
+    margin-right: 3em;
+}
+
+.button:hover {
+    color:var(--white);
+    transform: scale(1);
+}
+
+a:hover {
+    color:var(--brown);
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.3em;
+    --webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+}
+
+/*Pagina Producto como tal*/
+body {
+    background: var(--smokywhite);
+}
+
+.container h1{
+        text-align: center;
+        font-size: 7rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
