@@ -108,6 +108,7 @@ html {
 .button {
     background-color:var(--blue);
     color: var(--white);
+    margin-right: 3em;
 }
 
 .button:hover {
@@ -126,3 +127,21 @@ a:hover {
     -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
     box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
 }
+
+/*Pagina Producto como tal*/
+body {
+    background: var(--smokywhite);
+    }
+    /* Card start*/
+    .card {overflow:hidden}
+    .card.large {
+    height: 600px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+    border-radius: 5px;
+    }
+    /* Card end */
+    .media-content {
+    overflow: hidden;
+    }
+    
