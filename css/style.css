@@ -1,3 +1,9 @@
+:root {
+    --white: #ffffff;
+    --smokywhite:#F5F5F5;
+    --blue:#66C3C1;
+    --brown:#743E32;
+  }
 html {
     box-sizing: border-box;
 }
@@ -15,22 +21,22 @@ html {
 }
 
 .hero.is-brown {
-    background-color: #743E32;
+    background-color: var(--brown);
 }
 
 .navbar a {
-    color: white;
+    color:var(--white);
 }
 
 @media(min-width:300px) {
     .navbar-item {
-        background-color: #743E32;
+        background-color: var(--brown);
     }
 }
 
 .navbar a:hover {
-    color: #743E32;
-    background-color: white;
+    color: var(--brown);
+    background-color: var(--white);
 }
 
 .footer {
@@ -39,7 +45,7 @@ html {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #743E32;
+    background-color: var(--brown);
 }
 
 .footer::before {
@@ -58,7 +64,7 @@ html {
 }
 
 .copyrigth {
-    background-color: #66C3C1;
+    background-color:var(--blue);
     text-align: center;
     font-size: 1.5em;
 }
@@ -100,17 +106,18 @@ html {
 }
 
 .button {
-    background-color: #66C3C1;
-    color: white;
+    background-color:var(--blue);
+    color: var(--white);
+    margin-right: 3em;
 }
 
 .button:hover {
-    color: white;
+    color:var(--white);
     transform: scale(1);
 }
 
 a:hover {
-    color: #743E32;
+    color:var(--brown);
 }
 
 .box {
@@ -120,3 +127,16 @@ a:hover {
     -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
     box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
 }
+
+/*Pagina Producto como tal*/
+body {
+    background: var(--smokywhite);
+}
+
+.container h1{
+        text-align: center;
+        font-size: 7rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
