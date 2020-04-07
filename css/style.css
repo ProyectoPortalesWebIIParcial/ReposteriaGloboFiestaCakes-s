@@ -131,17 +131,12 @@ a:hover {
 /*Pagina Producto como tal*/
 body {
     background: var(--smokywhite);
-    }
-    /* Card start*/
-    .card {overflow:hidden}
-    .card.large {
-    height: 600px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: initial;
-    border-radius: 5px;
-    }
-    /* Card end */
-    .media-content {
-    overflow: hidden;
+}
+
+.container h1{
+        text-align: center;
+        font-size: 7rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     
