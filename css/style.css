@@ -14,6 +14,9 @@ html {
 *:after {
     box-sizing: inherit;
 }
+body {
+    background: var(--smokywhite);
+}
 
 .hero-body {
     background-image: url("../images/header.png");
@@ -131,7 +134,9 @@ html {
 }
 
 .button:hover {
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--brown);
+    border: 0.2em solid var(--blue);
     transform: scale(1);
 }
 
@@ -149,10 +154,6 @@ a:hover {
 
 
 /*Pagina Producto como tal*/
-
-body {
-    background: var(--smokywhite);
-}
 
 .container h1 {
     text-align: center;
