@@ -19,7 +19,7 @@ body {
 }
 
 .hero-body {
-    background-image: url("../images/header.png");
+    background-image: url("../images/header2.jpeg");
     background-size: cover;
     background-position: center center;
 }
@@ -176,6 +176,7 @@ a:hover {
 /*Pagina Producto como tal*/
 
 .container h1 {
+    color: var(--brown);
     text-align: center;
     font-size: 6rem;
     margin-top: 1rem;
