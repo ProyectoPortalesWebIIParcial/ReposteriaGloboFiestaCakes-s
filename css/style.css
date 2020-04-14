@@ -1,9 +1,10 @@
 :root {
     --white: #ffffff;
-    --smokywhite:#F5F5F5;
-    --blue:#66C3C1;
-    --brown:#743E32;
-  }
+    --smokywhite: #F5F5F5;
+    --blue: #66C3C1;
+    --brown: #743E32;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -13,9 +14,12 @@ html {
 *:after {
     box-sizing: inherit;
 }
+body {
+    background: var(--smokywhite);
+}
 
 .hero-body {
-    background-image: url("../images/header.png");
+    background-image: url("../images/header2.jpeg");
     background-size: cover;
     background-position: center center;
 }
@@ -24,8 +28,27 @@ html {
     background-color: var(--brown);
 }
 
+.logo-content{
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  padding-bottom: 2em;
+  color: white;
+  text-align: center;
+}
+
+.logo-content img{
+    width: 25em;
+    height: 22em;
+}
+
+.logo{
+    margin-left: 2em;
+    margin-top: 0.5em;
+}
+
 .navbar a {
-    color:var(--white);
+    color: var(--white);
 }
 
 @media(min-width:300px) {
@@ -64,9 +87,25 @@ html {
 }
 
 .copyrigth {
-    background-color:var(--blue);
+    background-color: var(--blue);
     text-align: center;
     font-size: 1.5em;
+    min-width: 100%;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    align-content: space-between;
+    margin-top: 11em;
+}
+
+@media(max-width:760px) {
+    .footer {
+        z-index: 1;
+        min-height: 30em;
+    }
+    .copyrigth {
+        margin-top: 20em;
+    }
 }
 
 .social-network i {
@@ -105,19 +144,24 @@ html {
     }
 }
 
+/* Clase para los botones*/
 .button {
-    background-color:var(--blue);
+    background-color: var(--blue);
     color: var(--white);
     margin-right: 3em;
+    margin-top: 1em;
 }
 
 .button:hover {
-    color:var(--white);
+    background-color: var(--white);
+    color: var(--brown);
+    border: 0.2em solid var(--blue);
     transform: scale(1);
 }
 
+/*Links referencia*/
 a:hover {
-    color:var(--brown);
+    color: var(--brown);
 }
 
 .box {
@@ -128,15 +172,19 @@ a:hover {
     box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
 }
 
+
 /*Pagina Producto como tal*/
-body {
-    background: var(--smokywhite);
+
+.container h1 {
+    color: var(--brown);
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  
 }
 
-.container h1{
-        text-align: center;
-        font-size: 7rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    
+.navbar-brand a:hover {
+    background-color: #743E32;
+}
+
