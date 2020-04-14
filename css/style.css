@@ -14,15 +14,37 @@ html {
 *:after {
     box-sizing: inherit;
 }
+body {
+    background: var(--smokywhite);
+}
 
 .hero-body {
-    background-image: url("../images/header.png");
+    background-image: url("../images/header2.jpeg");
     background-size: cover;
     background-position: center center;
 }
 
 .hero.is-brown {
     background-color: var(--brown);
+}
+
+.logo-content{
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  padding-bottom: 2em;
+  color: white;
+  text-align: center;
+}
+
+.logo-content img{
+    width: 25em;
+    height: 22em;
+}
+
+.logo{
+    margin-left: 2em;
+    margin-top: 0.5em;
 }
 
 .navbar a {
@@ -122,17 +144,22 @@ html {
     }
 }
 
+/* Clase para los botones*/
 .button {
     background-color: var(--blue);
     color: var(--white);
     margin-right: 3em;
+    margin-top: 1em;
 }
 
 .button:hover {
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--brown);
+    border: 0.2em solid var(--blue);
     transform: scale(1);
 }
 
+/*Links referencia*/
 a:hover {
     color: var(--brown);
 }
@@ -148,17 +175,16 @@ a:hover {
 
 /*Pagina Producto como tal*/
 
-body {
-    background: var(--smokywhite);
-}
-
 .container h1 {
+    color: var(--brown);
     text-align: center;
-    font-size: 7rem;
+    font-size: 6rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  
 }
 
 .navbar-brand a:hover {
     background-color: #743E32;
 }
+
