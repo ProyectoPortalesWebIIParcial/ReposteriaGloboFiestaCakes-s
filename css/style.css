@@ -28,6 +28,25 @@ body {
     background-color: var(--brown);
 }
 
+.logo-content{
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  padding-bottom: 2em;
+  color: white;
+  text-align: center;
+}
+
+.logo-content img{
+    width: 25em;
+    height: 22em;
+}
+
+.logo{
+    margin-left: 2em;
+    margin-top: 0.5em;
+}
+
 .navbar a {
     color: var(--white);
 }
@@ -140,6 +159,7 @@ body {
     transform: scale(1);
 }
 
+/*Links referencia*/
 a:hover {
     color: var(--brown);
 }
@@ -157,11 +177,13 @@ a:hover {
 
 .container h1 {
     text-align: center;
-    font-size: 7rem;
+    font-size: 6rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  
 }
 
 .navbar-brand a:hover {
     background-color: #743E32;
 }
+
